@@ -1,7 +1,7 @@
 import maya.cmds as mc
 import pytest
 
-from src.one.module_one import create_sphere
+from one.module_one import create_sphere
 
 
 @pytest.mark.usefixtures("session")
