@@ -57,5 +57,6 @@ jobs:
         pwd
         ls
         mayapy --version
+        mayapy -m setup_testenv
         mayapy -m unittest discover
 
