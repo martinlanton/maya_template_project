@@ -1,13 +1,17 @@
 import tempfile
 import os
 import shutil
+import logging
 
 import pytest
 import sys
 
 
+logger = logging.getLogger(__name__)
+
 location = os.path.dirname(__file__)
 src = os.path.join(location, "src")
+logger.info("Adding src path to sys.path, src path : %s" % src)
 if src not in sys.path:
     sys.path.insert(0, src)
 
