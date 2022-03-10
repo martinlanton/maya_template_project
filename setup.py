@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-name = "template_project"
+name = "maya_template_project"
 author = "Martin L'Anton"
 author_email = "lantonmartin@gmail.com"
 url = "https://github.com/martinlanton/tox_template_project"
