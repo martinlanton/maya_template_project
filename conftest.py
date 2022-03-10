@@ -3,6 +3,13 @@ import os
 import shutil
 
 import pytest
+import sys
+
+
+location = os.path.dirname(__file__)
+src = os.path.join(location, "src")
+if src not in sys.path:
+    sys.path.insert(0, src)
 
 
 @pytest.fixture(scope="session")
