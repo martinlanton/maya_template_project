@@ -1,13 +1,13 @@
 import maya.cmds as mc
-import pytest
 
 from one.module_one import create_sphere
+from tests.fixtures import common
 
 
-@pytest.mark.usefixtures("session")
-class TestMaya:
-    @classmethod
-    def setup_class(cls):
+class TestMaya(common.BaseTest):
+    def setUp(self):
+        super().setUp()
+        print("SETTING UP METHOD")
         create_sphere()
 
     def test_sphere_has_been_created(self):
